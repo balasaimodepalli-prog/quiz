@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<link rel="stylesheet" href="one.css">
+</head>
+<body>
+
+
+  <div id="play">
+    <h1>Play Quiz</h1>
+
+    <select id="category">
+      <option value="18">Computers</option>
+      <option value="9">General</option>
+      <option value="17">Science</option>
+      <option value="31">Anime & Manga</option>
+    </select>
+
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <select id="questions">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+    </select>
+
+    <select id="type">
+      <option value="multiple">MCQ</option>
+      <option value="boolean">True/False</option>
+    </select>
+
+    <button onclick="startQuiz()">Start</button>
+  </div>
+
+  <div id="quiz" style="display:none;">
+    <h2 id="qNo"></h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button onclick="nextQuestion()" id="nextBtn" disabled>Next</button>
+  </div>
+
+  <div id="score" style="display:none;">
+    <h1>Result</h1>
+    <p id="result"></p>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
